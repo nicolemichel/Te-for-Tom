@@ -14,6 +14,8 @@ body {
 
 p {
   font-family: var(--body-font);
+  font-size: 25px;
+  line-height: 45px;
 }
 
 a {
@@ -21,16 +23,17 @@ a {
 }
 
 nav {
-  text-align: center;
-  padding-top: 15px;
+  margin-top: 30px;
+  right: 4%;
 }
 
-nav ul {
+ul {
   list-style: none;
+  padding: 0;
 }
 nav li {
   display: inline;
-  padding-left: 45px;
+  padding-left: 75px;
 }
 nav a {
   text-decoration: none;
@@ -39,9 +42,13 @@ nav a {
   transition: all 100ms ease-in-out;
   position: relative;
 }
-
-nav a:active {
+nav a.active {
   text-decoration: line-through;
+}
+
+#logo-img {
+  width: 110px;
+  margin-top: -20%;
 }
 
 h4 {
@@ -49,8 +56,19 @@ h4 {
   margin-top: 4%;
   font-size: 40px;
 }
+.highlighted {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2px 20px 2px 20px;
+  font-size: 56px;
+}
+
 
 /*? HOME PAGE ?*/
+#pre-save {
+  padding-left: 10%;
+}
+
 .btn {
   font-family: var(--accent-font);
   font-weight: 700;
@@ -58,7 +76,7 @@ h4 {
   transition: all 100ms ease-in-out;
 }
 .btn-primary-outline {
-  left: 15%;
+  left: 10%;
   font-size: 30px;
   padding: 10px 40px;
   color: var(--secondary-color);
@@ -68,17 +86,6 @@ h4 {
   color: var(--primary-color);
   background: var(--secondary-color);
   border: none;
-}
-
-#pre-save {
-  padding-left: 15%;
-}
-
-.new-single {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 2px 20px 2px 20px;
-  font-size: 56px;
 }
 
 #circle {
@@ -91,7 +98,24 @@ h4 {
 
 .guitar-grooves {
   top: 20%;
-  right: 10%;
+  right: 9%;
+  height: 80%;
+  width: 200% !important;
+}
+
+/*? ABOUT PAGE ?*/
+.about-words {
+  margin-top: 30%;
+}
+.chill-guitar {
+  top: 20%;
+  right: 18%;
+  height: 80%;
+  width: 200% !important;
+}
+.chill-shadow {
+  top: 21%;
+  right: 15%;
   height: 80%;
   width: 200% !important;
 }
