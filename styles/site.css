@@ -63,7 +63,6 @@ h4 {
   font-size: 56px;
 }
 
-
 /*? HOME PAGE ?*/
 #pre-save {
   padding-left: 10%;
@@ -95,18 +94,52 @@ h4 {
   padding-top: 100%;
   margin-top: 20%;
 }
+.tiny-circles {
+  background: #f8f8f8;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+#circle-one {
+  height: 250px;
+  width: 250px;
+  top: 23%;
+  left: -18%;
+}
+#circle-two {
+  height: 175px;
+  width: 175px;
+  top: 10%;
+  right: 10%;
+}
+#circle-three {
+  height: 150px;
+  width: 150px;
+  bottom: 0%;
+  right: 5%;
+}
 
 .guitar-grooves {
   top: 20%;
   right: 9%;
   height: 80%;
-  width: 200% !important;
 }
 
 /*? ABOUT PAGE ?*/
-.about-words {
-  margin-top: 30%;
+#about-title {
+  position: relative;
+  top: 15%;
+  margin-left: 10%;
 }
+.about-words {
+  padding: 10%;
+}
+
+.te-singing {
+  padding: 15%;
+}
+
+/*? SHOWS PAGE ?*/
 .chill-guitar {
   top: 20%;
   right: 18%;
@@ -118,4 +151,34 @@ h4 {
   right: 15%;
   height: 80%;
   width: 200% !important;
+}
+
+/*? MUSIC PAGE ?*/
+#released-title {
+  text-align: center;
+  margin-top: 5%;
+}
+.songs:first-child {
+  margin-top: 5%;
+}
+.songs {
+  position: relative;
+  text-align: center;
+  left: 14%;
+  font-family: var(--accent-font);
+  font-size: 30px;
+}
+.song-title {
+  text-align: left;
+}
+.music-logo {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  padding-right: 5%;
+}
+
+/*? SHOP PAGE ?*/
+#shop-title {
+  text-align: center;
+  margin-top: 18%;
 }
