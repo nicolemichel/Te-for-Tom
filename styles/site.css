@@ -1,15 +1,17 @@
 :root {
   --primary-color: #040404;
   --secondary-color: #f8f8f8;
-  --title-font: "Lemon/Milk", sans-serif;
-  --accent-font: "Lemon/Milk light", sans-serif;
+  --main-font: "LEMON MILK", sans-serif;
   --body-font: "Lato", sans-serif;
 }
+
 
 body {
   background: var(--primary-color);
   color: var(--secondary-color);
-  font-family: var(--title-font);
+  font-family: var(--main-font);
+  font-size: 48px;
+  line-height: 100px;
 }
 
 p {
@@ -19,12 +21,22 @@ p {
 }
 
 a {
-  font-family: var(--accent-font);
+  font-weight: 300;
+  font-size: 30px;
+  position: relative;
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: all 100ms ease-in-out;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  font-size: 35px;
 }
 
 nav {
   margin-top: 30px;
-  right: 4%;
+  right: 7.5%;
 }
 
 ul {
@@ -35,13 +47,11 @@ nav li {
   display: inline;
   padding-left: 75px;
 }
-nav a {
-  text-decoration: none;
-  font-family: var(--accent-font);
+
+nav a:hover {
   font-size: 30px;
-  transition: all 100ms ease-in-out;
-  position: relative;
 }
+
 nav a.active {
   text-decoration: line-through;
 }
@@ -52,15 +62,31 @@ nav a.active {
 }
 
 h4 {
-  font-family: var(--accent-font);
-  margin-top: 4%;
+  font-weight: 300;
+  margin-top: 5%;
   font-size: 40px;
 }
 .highlighted {
   background: var(--secondary-color);
   color: var(--primary-color);
   padding: 2px 20px 2px 20px;
+  font-weight: 500;
   font-size: 56px;
+}
+.mini-highlighted {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2px 20px 2px 20px;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.circle {
+  background: var(--secondary-color);
+  border-radius: 50%;
+  width: 100%;
+  padding-top: 100%;
+  margin-top: 15%;
 }
 
 /*? HOME PAGE ?*/
@@ -69,17 +95,18 @@ h4 {
 }
 
 .btn {
-  font-family: var(--accent-font);
-  font-weight: 700;
+  font-family: var(--main-font);
+  font-weight: 500;
   font-size: 20px;
   transition: all 100ms ease-in-out;
 }
 .btn-primary-outline {
-  left: 10%;
+  font-weight: 400 !important;
   font-size: 30px;
   padding: 10px 40px;
   color: var(--secondary-color);
   border: 3px solid var(--secondary-color);
+  left: 10%;
 }
 .btn-primary-outline:hover {
   color: var(--primary-color);
@@ -87,13 +114,6 @@ h4 {
   border: none;
 }
 
-#circle {
-  background: var(--secondary-color);
-  border-radius: 50%;
-  width: 100%;
-  padding-top: 100%;
-  margin-top: 20%;
-}
 .tiny-circles {
   background: #f8f8f8;
   position: absolute;
@@ -128,8 +148,8 @@ h4 {
 /*? ABOUT PAGE ?*/
 #about-title {
   position: relative;
-  top: 15%;
   margin-left: 10%;
+  top: 15%;
 }
 .about-words {
   padding: 10%;
@@ -140,6 +160,10 @@ h4 {
 }
 
 /*? SHOWS PAGE ?*/
+#upcoming {
+  padding-left: 10%;
+}
+
 .chill-guitar {
   top: 20%;
   right: 18%;
@@ -150,35 +174,67 @@ h4 {
   top: 21%;
   right: 15%;
   height: 80%;
+  opacity: 0.9;
   width: 200% !important;
 }
 
-/*? MUSIC PAGE ?*/
-#released-title {
-  text-align: center;
-  margin-top: 5%;
+.show-dates {
+  margin-top: 10%;
 }
-.songs:first-child {
-  margin-top: 5%;
+
+/*? MUSIC PAGE ?*/
+.music-content {
+  text-align: center;
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+  margin-top: 4%;
 }
 .songs {
-  position: relative;
-  text-align: center;
-  left: 14%;
-  font-family: var(--accent-font);
   font-size: 30px;
+  text-align: center;
+  position: relative;
+  left: 14%;
 }
 .song-title {
+  font-weight: 500;
   text-align: left;
 }
 .music-logo {
   font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  padding-right: 5%;
+  font-weight: 900;
+  padding-right: 15%;
 }
+.stream-count {
+  font-weight: 300;
+}
+
+/*? STREAMS PAGE ?*/
+#stream-title {
+  text-align: center;
+}
+.stream-dates {
+  padding: 5%;
+}
+.stream-content {
+  text-align: center;
+  margin: 0 auto;
+}
+.right {
+  text-align: right;
+}
+
 
 /*? SHOP PAGE ?*/
 #shop-title {
   text-align: center;
   margin-top: 18%;
+}
+
+/*? CONTACT PAGE ?*/
+.pearls {
+  top: 15%;
+  right: 19%;
+  height: 85%;
 }
